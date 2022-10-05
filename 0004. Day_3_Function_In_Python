@@ -1,0 +1,1330 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "i62Cx-sgEjRH"
+   },
+   "source": [
+    "<b><h1>**FUNCTIONS IN PYTHON**</h1><b>\n",
+    "<h4> Welcome to the lesson on Function! You will learn why and how we use functions in Python :)</h4>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "-qW2PqmxGTCM"
+   },
+   "source": [
+    "<h3><b>What is a Function and why we use it</h3></b>\n",
+    "A function is a block of which when called perform a specific task.\n",
+    "In python programming or any programming language you use, a function is used:\n",
+    "\n",
+    "<i><li> When a specific block of code is required to be performed again and again.\n",
+    "<i><li> To make the code easier to understand and more user friendly."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "PhCK935wIbSP"
+   },
+   "source": [
+    "<H3><B>IMPLEMENTING A FUNCTION</b></h3>\n",
+    "<u><h5>For implementing a function we need to follow three steps:</u></h5>\n",
+    "<ul><li><I>   Define the function\n",
+    "<li>   Write function body\n",
+    "<li>   Return Statement</i></ul>\n",
+    "Don't Worry!! We will  look at these three steps one by one\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "VsYtma0koCgV"
+   },
+   "source": [
+    "<h3><b>1. Defining a Funnction in Python</b></h3>\n",
+    "\n",
+    "In python you define a Function using the keyword <u>**def**</u>.\n",
+    "```\n",
+    "# To define a  function we first write the keyword \"def\" followed by \"name of the function\" and round paranthesis \"()\". \n",
+    "\n",
+    "def Fun_Name():\n",
+    "    ## Here we just defined a function\n",
+    "    ## The name of the function is Fun_Name\n",
+    "    ## COOL XD\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "-OLSFOg5p1OY"
+   },
+   "source": [
+    "<h3><b>2. Writing the Function body</b></h3>\n",
+    "\n",
+    "After defining the function now you need to write the body of the function which is the working of youe function  <i>i.e. what you want your function to do for you</i>\n",
+    "\n",
+    "```\n",
+    "def Hello():\n",
+    "    print('Hello')\n",
+    "```\n",
+    "<h5> The code above will print Hello whenever you call the function.</h5>\n",
+    "<b> Don't worry we will see calling function in details later... </B> <br><br>\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "2QhjUtOP6WnQ"
+   },
+   "outputs": [],
+   "source": [
+    "#LET'S TRY THE ABOVE CODE\n",
+    "def Hello():\n",
+    "  print('Hello')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "MXh60SMz6mBK"
+   },
+   "source": [
+    "><b>Note: You can use as many print lines in the function as you want!!</b>\n",
+    "\n",
+    "<br>\n",
+    "<h2><b>TASK</b></h2>\n",
+    "Try making a function to print the message you want the way we just did...  For now keep the name of the function <b>ShapeAI</b>  and run the two cells below..."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "DP3EpUlas0v_"
+   },
+   "outputs": [],
+   "source": [
+    "def ShapeAI():\n",
+    "  ## PRINT WHATEVER YOU WANT TO PRINT BUT MAKE SURE TO INDENT THE CODE PROPERLY\n",
+    "  print(\"Bootcamps\")\n",
+    "\n",
+    "# DON'T WORRY AFTER YOU RUN THIS CELL,THERE WOULD BE NO OUTPUT AS YOU ARE JUST DEFINING THE FUNCTION"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 34
+    },
+    "colab_type": "code",
+    "id": "cDj9lwFFs1Fx",
+    "outputId": "fd52a758-fbae-4810-da5d-e08c140cb0b8"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bootcamps\n"
+     ]
+    }
+   ],
+   "source": [
+    "ShapeAI()    ## HERE WE ARE CALLING THE FUNCTION, IT SHOULD PRIINT THE STATEMENT YOU ASKED THE FUNCTION TO PRINT IN THE ABOVE CELL"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "7q_vkccewgc4"
+   },
+   "source": [
+    "<b>In the function we just defined we just called the function and didnot pass any other value..But what if you want to write a function that print the addition of the two number that you want?</b>\n",
+    "<li>You have to pass the two values in the function as an argument...\n",
+    "<BR>\n",
+    "<br>\n",
+    "<b>How does you do that?</b>\n",
+    "<li>You define the arguments you want your function to take as input when the function is called inside the round paaranthesis\n",
+    "\n",
+    "```\n",
+    "def ADD(a, b):\n",
+    "    print(a+b)\n",
+    "```\n",
+    "<i>The function we just wrote take the two arguments by the user and store them in local variables <b>a</b> and <b>b</b>. The function then use the value stored in the variables to perform addition and print the addition</i>\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 34
+    },
+    "colab_type": "code",
+    "id": "TPEdfLOj6uO_",
+    "outputId": "1957aac6-91d5-4c44-a251-3722aef66d74"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "5\n",
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "def ADD(a,b):\n",
+    "  print(a+b)\n",
+    "x = int(input())\n",
+    "y= int(input())\n",
+    "ADD(x,y)  "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "NhKPhAej7RRc"
+   },
+   "source": [
+    "<H4><B>Calling of a Function</b></h4>\n",
+    "\n",
+    "<li>Calling a function means to make a refference in your code to a function that you wrote.\n",
+    "<li>To call a function you need to write the function name followed by round parannthesis <b>()</b>\n",
+    "<li>If the function you're calling requires arguments, you pass the argument values inside the paranthesis.  \n",
+    "\n",
+    "\n",
+    "```\n",
+    "fun_name(arguments_to_pass_if_any)   # This how a function is called\n",
+    "```\n",
+    "If you notice, while calling the ADD function or any of the function we define above, we just follow the same pattern. In the function hello, we didnot pass any argument because that didn't need any argument.<br><br>\n",
+    "\n",
+    "> **NOTE:** We can pass the arguments while calling the function using two ways:\n",
+    "* *By position, and*\n",
+    "* *By name*\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 50
+    },
+    "colab_type": "code",
+    "id": "jyCOQ8kj-cOZ",
+    "outputId": "ae722ca1-009b-49c9-de43-8db4f6688cdd"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.5\n",
+      "2.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "def divide(numinator, denominator):\n",
+    "  print(numinator/denominator)\n",
+    "\n",
+    "divide(2,4)   # Calling by position\n",
+    "divide(denominator=2, numinator=4)   # Calling ny name"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "HiEo76HX62uy"
+   },
+   "source": [
+    "<h2><b>Task:</b></h2>Write a function which takes two number as arguments and print the multiplication of the two numbers\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "-vBMmkR75ZDl"
+   },
+   "outputs": [],
+   "source": [
+    "def Multiply(a,b):\n",
+    "  ## WRITE THE CODE TO PRINT THE MULTIPLICATION OF TWO NUMBERS\n",
+    "    print( a*b)\n",
+    "\n",
+    "# Call the multiply function you just defined "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "CZn_Rz6a646Z"
+   },
+   "source": [
+    "<h4> <B> Default Values to the Arguments</b></h4>\n",
+    "While defining a function you can set some default values for the arguments in case if user dosn't pass the argument value\n",
+    "Let's look how:<br>\n",
+    "\n",
+    "```\n",
+    "def Area(length=2, breadth=2):\n",
+    "    print(length*breadth)\n",
+    "```\n",
+    "Here if you don't pass the values of length and breadth while calling the function, the default values the function will take will be 2 and 2 for length and breadth repectively.</p>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "s9WoT5I08lJR"
+   },
+   "outputs": [],
+   "source": [
+    "# Lets give it a try\n",
+    "def Area(length=5, breadth=1):\n",
+    "  print(length*breadth)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 84
+    },
+    "colab_type": "code",
+    "id": "05708Hxs9Ak3",
+    "outputId": "a717bbbb-971b-43f6-84f0-67d663a0f89f"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "14\n",
+      "3\n",
+      "10\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "Area(7,2)          # Expected Output: 10\n",
+    "Area(3)            # Expected Output: 3\n",
+    "Area(breadth=2)    # Expected Output: 10\n",
+    "Area()             # Expected Output: 5"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "z2_NfhKP9e_k"
+   },
+   "source": [
+    "<h3> <b>3. Return Statement</h3></b>\n",
+    "<b>In the function we saw above, we just print the things which we wanted. But what if we instead of printing the value, we want to store those values and use them later for our work ?</b>\n",
+    "<li> We use the return statement to return the calculations we did in our function\n",
+    "\n",
+    "```\n",
+    "def ADD(a=4, b=3):\n",
+    "    return a+b\n",
+    "```\n",
+    "The code returns the addition of two numbers, we can store the value return by the function and use it later whenever required"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def ADD(a, b):\n",
+    "  print(a+b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = ADD(2,4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "type(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "mSzq9Na69sUr"
+   },
+   "outputs": [],
+   "source": [
+    "# Let's see the code in action\n",
+    "def ADD(a, b):\n",
+    "  return a+b, a*b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(5, 6)"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "ADD(2,3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "add, multiply = ADD(2,3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "add"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "multiply"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 34
+    },
+    "colab_type": "code",
+    "id": "xFi0OPFkAX7U",
+    "outputId": "d141711a-a388-4a00-f33a-2606d83fbd0a"
+   },
+   "outputs": [],
+   "source": [
+    "summ = ADD(5,2)\n",
+    "# HERE WE JUST STORED THE VALUE RETURNED BY THE FUNCTION IN THE VARIABLE SUM \n",
+    "# LET'S SEE WHAT DOES THE VARIABLE SUM CONTAIN BY PRINTIG IT\n",
+    "print(summ)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "9ZYcLWB0BGUT"
+   },
+   "source": [
+    "> <B>Note: You can also return more than one value in a function</B>\n",
+    "\n",
+    "```\n",
+    "def Fun(a=5, b=10):\n",
+    "    sum=a+b\n",
+    "    diff=a-b\n",
+    "    return sum, diff \n",
+    "```\n",
+    "The code returns the addition and subtraction of the two numbers..."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "KLq3T8KPC-Ar"
+   },
+   "outputs": [],
+   "source": [
+    "def Fun(a=5, b=10):\n",
+    "  sum=a+b\n",
+    "  diff=a-b\n",
+    "  x = sum*diff\n",
+    "  return sum, diff, x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "summ = Fun(10,6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(16, 4, 64)"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "summ"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 50
+    },
+    "colab_type": "code",
+    "id": "Jv41bQubDHzJ",
+    "outputId": "4b0d7453-2953-4309-e11c-6b193538a2fe"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Addition of the two numbers is 16\n",
+      "Difference of the two numbers is 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "summ, diff, mul = Fun(10,6)\n",
+    "print(f'Addition of the two numbers is {summ}')\n",
+    "print(f'Difference of the two numbers is {diff}')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "SqjcXLtSEWWy"
+   },
+   "source": [
+    "> <b>Note: All function have a return statement. If you doesn't return anything then by default it returns None</b>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def ADD(a, b):\n",
+    "  return (a+b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 50
+    },
+    "colab_type": "code",
+    "id": "a-YipBdOEhjD",
+    "outputId": "cc5d7ade-8f36-4a66-ea15-af6080e154d8"
+   },
+   "outputs": [],
+   "source": [
+    "a = ADD(2,5)\n",
+    "#a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "It9OU80SXKP2"
+   },
+   "source": [
+    "## **Summary:**\n",
+    "A function definition includes several important parts.\n",
+    "\n",
+    "#### **Function Header:**\n",
+    "Let's start with the function header, which is the first line of a function definition.\n",
+    "\n",
+    "1. The function header always starts with the def keyword, which indicates that this is a function definition.\n",
+    "2. Then comes the function name (here, cylinder_volume), which follows the same naming conventions as variables. You can revisit the naming conventions below.\n",
+    "3. Immediately after the name are parentheses that may include arguments separated by commas (here, height and radius). Arguments, or parameters, are values that are passed in as inputs when the function is called, and are used in the function body. If a function doesn't take arguments, these parentheses are left empty.\n",
+    "4. The header always end with a colon :.\n",
+    "<br><br>\n",
+    "\n",
+    "#### **Function Body:**\n",
+    "The rest of the function is contained in the body, which is where the function does its work.\n",
+    "\n",
+    "1. The body of a function is the code indented after the header line. Here, it's the two lines that define pi and return the volume.\n",
+    "2. Within this body, we can refer to the argument variables and define new variables, which can only be used within these indented lines.\n",
+    "3. The body will often include a return statement, which is used to send back an output value from the function to the statement that called the function. A return statement consists of the return keyword followed by an expression that is evaluated to get the output value for the function. If there is no return statement, the function simply returns None.\n",
+    "\n",
+    "\n",
+    "Below, you'll find a code editor where you can experiment with this.\n",
+    "<br><br>\n",
+    "\n",
+    "\n",
+    "#### **Naming Conventions for Functions:**\n",
+    "Function names follow the same naming conventions as variables.\n",
+    "\n",
+    "1. Only use ordinary letters, numbers and underscores in your function names. They can’t have spaces, and need to start with a letter or underscore.\n",
+    "2. You can’t use reserved words or built-in identifiers that have important purposes in Python, which you’ll learn about throughout this bootcamp.\n",
+    "3. Try to use descriptive names that can help readers understand what the function does."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "1zWym1bCYaIO"
+   },
+   "source": [
+    "### **Question:**\n",
+    "Write a function named population_density that takes two arguments, population and land_area, and returns a population density calculated from those values. I've included two test cases that you can use to verify that your function works correctly. Once you've written your function, use the Test Run button to test your code."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "Xl0sQn71YhmM"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "expected result: 10, actual result: 10.0\n",
+      "expected result: 7123.6902801, actual result: 7123.690280065897\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write your function here\n",
+    "def population_density(population, land_area):\n",
+    "    return population/land_area\n",
+    "\n",
+    "\n",
+    "\n",
+    "# test cases for your function\n",
+    "test1 = population_density(10, 1)\n",
+    "expected_result1 = 10\n",
+    "print(\"expected result: {}, actual result: {}\".format(expected_result1, test1))\n",
+    "\n",
+    "test2 = population_density(864816, 121.4)\n",
+    "expected_result2 = 7123.6902801\n",
+    "print(\"expected result: {}, actual result: {}\".format(expected_result2, test2))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "mUQ7EhYmYmAQ"
+   },
+   "source": [
+    "### **Question:**\n",
+    "Write a function named readable_timedelta. The function should take one argument, an integer days, and return a string that says how many weeks and days that is. For example, calling the function and printing the result like this:\n",
+    "\n",
+    "```\n",
+    "print(readable_timedelta(10))\n",
+    "```\n",
+    "should output the following:\n",
+    "```\n",
+    "1 week(s) and 3 day(s).\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "DoExPTYTY0CQ"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 weeks 3 days\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write your function here\n",
+    "\n",
+    "def readable_timedelta(a):\n",
+    "    week = a//7\n",
+    "    days = a%7\n",
+    "    return(f\"{week} weeks {days} days\")\n",
+    "# test your function\n",
+    "print(readable_timedelta(10))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "6ZHUsdxdeixH"
+   },
+   "source": [
+    "<H2> <b>Lambda Function </b> </H2>\n",
+    "We just saw a simple function to return addition of two numbers, instead of writting the function the way we defined earlier there is an another way of writtng it.\n",
+    "\n",
+    "```\n",
+    "def Add(a, b):\n",
+    "  \n",
+    "    return a+b\n",
+    "```\n",
+    "The code above can be written as:\n",
+    "\n",
+    "```\n",
+    "Add = lambda a,b: a+b\n",
+    "```\n",
+    "\n",
+    "> <b> Note: The lambda function can take any number of arguments but can have only one expression\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 34
+    },
+    "colab_type": "code",
+    "id": "PVz2uvOhgd_5",
+    "outputId": "a268e168-32b9-4603-819e-6db30c1db50b"
+   },
+   "outputs": [],
+   "source": [
+    "Sub = lambda a,b: a-b\n",
+    "\n",
+    "print(Sub(5,2))    #EXPEXTED OUTPUT: 3"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "lj2o-TCQbbcH"
+   },
+   "source": [
+    "### **Components of a Lambda Function:**\n",
+    "1. The lambda keyword is used to indicate that this is a lambda expression.\n",
+    "2. Following lambda are one or more arguments for the anonymous function separated by commas, followed by a colon :. Similar to functions, the way the arguments are named in a lambda expression is arbitrary.\n",
+    "3. Last is an expression that is evaluated and returned in this function. This is a lot like an expression you might see as a return statement in a function.\n",
+    "\n",
+    "With this structure, lambda expressions aren’t ideal for complex functions, but can be very useful for short, simple functions."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "WKLQ5wLybvql"
+   },
+   "source": [
+    "### **Question:**\n",
+    "map() is a higher-order built-in function that takes a function and iterable as inputs, and returns an iterator that applies the function to each element of the iterable. The code below uses map() to find the mean of each list in numbers to create the list averages. Give it a test run to see what happens.\n",
+    "\n",
+    "Rewrite this code to be more concise by replacing the mean function with a lambda expression defined within the call to map()."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "T4v-Zdlmb1l6"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "58.2\n",
+      "[57.0, 58.2, 50.6, 27.2]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "<map at 0x1a0202d5f40>"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "numbers = [\n",
+    "              [34, 63, 88, 71, 29],\n",
+    "              [90, 78, 51, 27, 45],\n",
+    "              [63, 37, 85, 46, 22],\n",
+    "              [51, 22, 34, 11, 18]\n",
+    "           ]\n",
+    "\n",
+    "def mean(num_list):\n",
+    "    return sum(num_list) / len(num_list)\n",
+    "print(mean(numbers[1]))\n",
+    "averages = list(map(mean, numbers))\n",
+    "print(averages)\n",
+    "map(mean, numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "numbers = [\n",
+    "              [34, 63, 88, 71, 29],\n",
+    "              [90, 78, 51, 27, 45],\n",
+    "              [63, 37, 85, 46, 22],\n",
+    "              [51, 22, 34, 11, 18]\n",
+    "           ]\n",
+    "\n",
+    "def mean(num_list):\n",
+    "    return sum(num_list) / len(num_list)\n",
+    "\n",
+    "averages = tuple(map(mean, numbers))\n",
+    "print(averages)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "6jeo8OmIAvYx"
+   },
+   "source": [
+    "**<h2>VARIABLE SCOPE</h2>**\n",
+    " The scope of the variable reffers to which part of the code, the variable can be referenced, or used, from\n",
+    "\n",
+    "* If a variable is created inside a function, then it can only be used inside that function and not anywhere else."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 195
+    },
+    "colab_type": "code",
+    "id": "6l0VMXsZBUD6",
+    "outputId": "799b4c9f-d248-483a-b371-8d48e377f514"
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "14"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "ans = 3\n",
+    "def sum(a, b):\n",
+    "    global answer\n",
+    "    answer = a+b\n",
+    "    answer = answer+ans\n",
+    "    return answer\n",
+    "\n",
+    "S = sum(5,6)\n",
+    "answer"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "S7rV4GiDCARY"
+   },
+   "source": [
+    "<br>On the other hand, we might have a variable defined outside the function, and we can access it anywhere outside or within these functions"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 50
+    },
+    "colab_type": "code",
+    "id": "BDo_TT6XCSDM",
+    "outputId": "8dffbb4d-27c3-48eb-c05f-1d13758abfe9"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ans\n",
+      "0\n",
+      "hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "ans = 0\n",
+    "def print_ans():\n",
+    "  global y\n",
+    "  y = \"hello\"\n",
+    "  \n",
+    "  print('ans')\n",
+    "\n",
+    "print_ans()\n",
+    "print(ans)\n",
+    "print(y)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "kYPgvVWbDFhs"
+   },
+   "source": [
+    "The purpose of the functions is to make the code cleaner and easy to understand. Writting the formula for calculating simple interest again and again is mush more difficult to understand than writting a function to calculate the interest ans call it again and again.<br>\n",
+    "<br>\n",
+    "One of the most important thing that makes code conataining the function easier to understand is that the functions have the human defined name, which are easier to understand i.e. the function to return area of the circle can be named as cir_area, which makes it easier to recognize as the area of circle.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "pIY7nP_dZoKx"
+   },
+   "source": [
+    "> **Good practice:** It is best to define variables in the smallest scope they will be needed in. While functions can refer to variables defined in a larger scope, this is very rarely a good idea since you may not know what variables you have defined if your program has a lot of variables.\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "XZitbxlaZkZt"
+   },
+   "source": [
+    "## **DOCSTRINGS**\n",
+    "There is one more technique that makes the function in python more readable, the **documentation strings** or the **docstrings**. Docstrings are the type of comments that explains the purpose of a function and how it should be used.\n",
+    "\n",
+    "* Docstrings are surrounded by tripple quotes.\n",
+    "* The first line of the docstring is the brief explaination of the function perpose.\n",
+    "* The next line of the docstring is generally contains information about the arguments that the function takes\n",
+    "* Finally it provides the description about the output.\n",
+    "\n",
+    ">**NOTE:** Every part of the docstring is optional, but it is good habit to write docstring while defining a function, so that everyone can understand the code easily"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/",
+     "height": 34
+    },
+    "colab_type": "code",
+    "id": "k6aGsQJdGPIm",
+    "outputId": "ad0d7971-629f-4e2a-80fe-adcf0c8f5757"
+   },
+   "outputs": [],
+   "source": [
+    "def simple_interest(amount, rate, time):\n",
+    "  \"\"\"\n",
+    "  Calculate the total amount to be paid after adding Simple Interest.\n",
+    "  INPUT:\n",
+    "  amount = principal amount (ruppes)\n",
+    "  rate = rate (in %) at which the interest is gonna increase (rupees/year)\n",
+    "  time = time for which the principal amount was kept (in years)\n",
+    "\n",
+    "  OUTPUT:\n",
+    "  returns the total amount to be paid after adding simple interest \n",
+    "  \"\"\"\n",
+    "  return (amount + amount*rate*time/100)\n",
+    "\n",
+    "simple_interest(1000, 10, 1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "8wDTqUigbD4u"
+   },
+   "source": [
+    "If you think that a longer description would be appropriate for the function, you can add more information after the one-line summary. In the example above, you can see that we wrote an explanation of the function's arguments, stating the purpose and types of each one. It's also common to provide some description of the function's output.\n",
+    "\n",
+    "Every piece of the docstring is optional, however, docstrings are a part of good coding practice. You can read more about docstring conventions [here.](https://www.python.org/dev/peps/pep-0257/)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "Fm0KB_kaCl9p"
+   },
+   "source": [
+    "Scope is essential to understand how information is passed in python or any other programming language"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "colab_type": "text",
+    "id": "K6ZDNvQ3FHEe"
+   },
+   "source": [
+    "**<h3>TASK**</h3>\n",
+    "Write a python function find max(a/b) for all (a,b) belongs to {x1, x2, x3}, where x1, x2 and x3 are the numbers passed as an argument to the function.\n",
+    "<br><br>\n",
+    "for e.g: if we pass 1, 2 and 3 to the function , then it should return:\n",
+    "\n",
+    "**max( 1/1, 1/2, 1/3, 2/1, 2/2, 2/3, 3/1, 3/2, 3/3 )**\n",
+    "so the answer for the example will be 3 *i.e* 3/1.   \n",
+    "\n",
+    "also write an appropriate docstring for that"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "colab": {},
+    "colab_type": "code",
+    "id": "RcO6Um_NbS-n"
+   },
+   "outputs": [],
+   "source": [
+    "# your function here\n",
+    "def maximum(a,b,c):\n",
+    "    \"\"\"\n",
+    "    max() function takes three arguments a,b,c \n",
+    "    and compares different combinations \n",
+    "    of (a/a, a/b, a/c, b/a, b/b, b/c, c/a, c/b, c/c) \n",
+    "    and returns the max of it\n",
+    "    \"\"\"\n",
+    "    new=[]\n",
+    "    val=[a,b,c]\n",
+    "    for i in val:\n",
+    "        for j in val:\n",
+    "            new.append(i/j)\n",
+    "    return max(new)\n",
+    "maximum(1,2,3)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "int(input())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "while True:\n",
+    "    try:\n",
+    "        x = int(input())\n",
+    "    except:\n",
+    "        print(\"enter a valid number between 1 to 5\")\n",
+    "    else:\n",
+    "        print(\"thanks for {} rating\".format(x))\n",
+    "    finally:\n",
+    "        print(\"bye\")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f= open(\"shape.txt\",\"r\")\n",
+    "text = f.read()\n",
+    "f.close()\n",
+    "print(text)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f= open(\"shape.txt\",\"r\")\n",
+    "text = f.readline()\n",
+    "f.close()\n",
+    "print(text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f= open(\"shapeai.txt\",\"x\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f.write"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f= open(\"devtown.txt\",\"w\")\n",
+    "f.write(\"new file created\")\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "20\n",
+      "30\n"
+     ]
+    }
+   ],
+   "source": [
+    "def function():\n",
+    "    ans=20\n",
+    "    print(ans)\n",
+    "    global res\n",
+    "    res = 10+20\n",
+    "function()\n",
+    "print(res)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "colab": {
+   "collapsed_sections": [],
+   "name": "Function In Python",
+   "provenance": []
+  },
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 1
+}
